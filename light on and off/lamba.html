@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamba Aç/Kapa</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Lamba Kontrol</h2>
+<p>Açma ve kapatma için aşağıdaki butonları kullanın:</p>
+
+<img id="myImage" src="lamba.jpg" alt="Lamba Kapalı">
+
+<br>
+
+<button onclick="turnOn()">Lambayı Aç</button>
+<button onclick="turnOff()">Lambayı Kapat</button>
+
+<script>
+    function turnOn() {
+        document.getElementById("myImage").src = "acıklamba.jpg";
+    }
+
+    function turnOff() {
+        document.getElementById("myImage").src = "lamba.jpg";
+    }
+</script>
+
+</body>
+</html>
